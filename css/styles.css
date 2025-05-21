@@ -8,26 +8,27 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .content {
     display: flex;
     width: 96%;
-    height: 96%;
-    margin: 2%;
+    min-height: 96%;
+    margin: 1% 1%;
     border: 10px solid #000;
     padding: 2%;
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    flex-wrap: wrap;
     flex-direction: row;
+    overflow: auto;
 }
 
 .icon {
@@ -40,6 +41,5 @@ body {
 
 
 .logo {
-    max-height: 200px;
-
+    max-width: 250px;
 }
